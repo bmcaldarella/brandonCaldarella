@@ -1,0 +1,51 @@
+  table{
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+  margin: 100px auto;
+
+
+}
+
+th, td {
+  padding: 18px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd5c;
+ 
+}
+
+#output, pre{
+ width: 700px;
+ overflow-y: scroll;
+  overflow-wrap: break-word; 
+  white-space: normal; 
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background: #fff;
+  }
+  
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #f2f2f2;
+    border-top: 6px solid #56829e;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: animate-preloader 1s linear infinite;
+  }
+  
+  @keyframes animate-preloader {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
